@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smoothie Order Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Hamed Smoothie Order Form</h1>
+    <form id="smoothie-form">
+        <label for="base">Choose your base:</label>
+        <select id="base" name="base">
+            <option value="milk">Milk</option>
+            <option value="yogurt">Yogurt</option>
+            <option value="juice">Juice</option>
+            <option value="water">Water</option>
+            <option value="almond_milk">Almond Milk</option>
+            <option value="coconut_water">Coconut Water</option>
+        </select><br>
+
+        <label>Choose your fruits:</label><br>
+        <input type="checkbox" id="banana" name="fruits" value="Banana" data-price="0.50">
+        <label for="banana">Banana ($0.50)</label><br>
+        <input type="checkbox" id="strawberry" name="fruits" value="Strawberry" data-price="0.75">
+        <label for="strawberry">Strawberry ($0.75)</label><br>
+        <input type="checkbox" id="blueberry" name="fruits" value="Blueberry" data-price="0.60">
+        <label for="blueberry">Blueberry ($0.60)</label><br>
+        <!-- Added more fruit options -->
+        <input type="checkbox" id="mango" name="fruits" value="Mango" data-price="0.80">
+        <label for="mango">Mango ($0.80)</label><br>
+        <input type="checkbox" id="pineapple" name="fruits" value="Pineapple" data-price="0.70">
+        <label for="pineapple">Pineapple ($0.70)</label><br>
+        
+        <label for="extras">Extras ($0.50 each)</label>
+        <input type="text" id="extras" name="extras" placeholder="e.g., honey, nuts"><br>
+
+        <!-- Size Selection -->
+        <label for="size">Size:</label>
+        <select id="size" name="size">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+        </select><br>
+
+        <button type="button" id="order-btn">Order</button>
+    </form>
+
+    <div id="order-summary"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
